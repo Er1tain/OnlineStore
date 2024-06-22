@@ -3,6 +3,9 @@ namespace OnlineStore;
 public partial class FormProducts : Form{
     private System.ComponentModel.IContainer components = null;
 
+    private TextBox InputCountProducts = new TextBox();
+    private TextBox InputNameProducts = new TextBox();
+
     private void InitializeComponent()
     {
         this.components = new System.ComponentModel.Container();
