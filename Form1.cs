@@ -24,11 +24,19 @@ public partial class Form1 : Form
 
         //Кнопка для отображения списка клиентов
         ClientsButton.Location = new System.Drawing.Point(12, 68);
-        ClientsButton.Name = "ProductsButton";
+        ClientsButton.Name = "ClientsButton";
         ClientsButton.Size = new System.Drawing.Size(200, 50);
         ClientsButton.TabIndex = 1;
         ClientsButton.Text = "Клиенты";
         Controls.Add(ClientsButton);
+
+        //Кнопка просмотра накладных
+        InvoiceButton.Location = new System.Drawing.Point(12, 124);
+        InvoiceButton.Name = "InvoiceButton";
+        InvoiceButton.Size = new System.Drawing.Size(200, 50);
+        InvoiceButton.TabIndex = 2;
+        InvoiceButton.Text = "Накладные";
+        Controls.Add(InvoiceButton);
 
         
         this.components = new System.ComponentModel.Container();
