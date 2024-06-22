@@ -12,6 +12,11 @@ public partial class Form1 : Form
     private System.Windows.Forms.Button InvoiceButton = new System.Windows.Forms.Button();
     private System.Windows.Forms.Button ReportButton = new System.Windows.Forms.Button();
 
+    private void WindowProducts(object sender, EventArgs e) {
+        FormProducts formProducts = new FormProducts();
+        formProducts.ShowDialog();
+    }
+
     private void InitializeComponent()
     {
         //Кнопка для выбора приобретаемых товаров
@@ -20,6 +25,7 @@ public partial class Form1 : Form
         ProductsButton.Size = new System.Drawing.Size(200, 50);
         ProductsButton.TabIndex = 0;
         ProductsButton.Text = "Товары";
+        ProductsButton.Click += new EventHandler(WindowProducts);
         Controls.Add(ProductsButton);
 
         //Кнопка для отображения списка клиентов
@@ -51,6 +57,7 @@ public partial class Form1 : Form
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(800, 450);
         this.Text = "Главное окно";
+        
 
     }
 
