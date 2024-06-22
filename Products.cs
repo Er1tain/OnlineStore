@@ -18,9 +18,10 @@ public partial class FormProducts : Form{
         NameProducts.Size = new Size(170, 38);
         Controls.Add(NameProducts);
 
-        InputNameProducts.Location = new Point(285, 70);
+        InputNameProducts.Location = new Point(305, 70);
         InputNameProducts.Name = "NameProducts";
         InputNameProducts.Size = new Size(200, 38);
+        InputNameProducts.TextAlign = HorizontalAlignment.Center;
         Controls.Add(InputNameProducts);
 
 
@@ -30,9 +31,10 @@ public partial class FormProducts : Form{
         CountProducts.Size = new Size(170, 38);
         Controls.Add(CountProducts);
 
-        InputCountProducts.Location = new Point(285, 120);
+        InputCountProducts.Location = new Point(305, 120);
         InputCountProducts.Name = "CountProducts";
         InputCountProducts.Size = new Size(200, 38);
+        InputCountProducts.TextAlign = HorizontalAlignment.Center;
         Controls.Add(InputCountProducts);
 
         components = new System.ComponentModel.Container();
