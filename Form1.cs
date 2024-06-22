@@ -15,7 +15,7 @@ public partial class Form1 : Form
     private void InitializeComponent()
     {
         //Кнопка для выбора приобретаемых товаров
-        ProductsButton.Location = new System.Drawing.Point(12, 12);
+        ProductsButton.Location = new System.Drawing.Point(310, 12);
         ProductsButton.Name = "ProductsButton";
         ProductsButton.Size = new System.Drawing.Size(200, 50);
         ProductsButton.TabIndex = 0;
@@ -23,7 +23,7 @@ public partial class Form1 : Form
         Controls.Add(ProductsButton);
 
         //Кнопка для отображения списка клиентов
-        ClientsButton.Location = new System.Drawing.Point(12, 68);
+        ClientsButton.Location = new System.Drawing.Point(310, 73);
         ClientsButton.Name = "ClientsButton";
         ClientsButton.Size = new System.Drawing.Size(200, 50);
         ClientsButton.TabIndex = 1;
@@ -31,7 +31,7 @@ public partial class Form1 : Form
         Controls.Add(ClientsButton);
 
         //Кнопка просмотра накладных
-        InvoiceButton.Location = new System.Drawing.Point(12, 124);
+        InvoiceButton.Location = new System.Drawing.Point(310, 129);
         InvoiceButton.Name = "InvoiceButton";
         InvoiceButton.Size = new System.Drawing.Size(200, 50);
         InvoiceButton.TabIndex = 2;
@@ -39,7 +39,7 @@ public partial class Form1 : Form
         Controls.Add(InvoiceButton);
 
         //Кнопка формирования отчёта
-        ReportButton.Location = new System.Drawing.Point(12, 180);
+        ReportButton.Location = new System.Drawing.Point(310, 185);
         ReportButton.Name = "InvoiceButton";
         ReportButton.Size = new System.Drawing.Size(200, 50);
         ReportButton.TabIndex = 2;
