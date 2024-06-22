@@ -38,6 +38,14 @@ public partial class Form1 : Form
         InvoiceButton.Text = "Накладные";
         Controls.Add(InvoiceButton);
 
+        //Кнопка формирования отчёта
+        ReportButton.Location = new System.Drawing.Point(12, 180);
+        ReportButton.Name = "InvoiceButton";
+        ReportButton.Size = new System.Drawing.Size(200, 50);
+        ReportButton.TabIndex = 2;
+        ReportButton.Text = "Накладные";
+        Controls.Add(ReportButton);
+
         
         this.components = new System.ComponentModel.Container();
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
