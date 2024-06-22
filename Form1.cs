@@ -1,4 +1,4 @@
-namespace Csharp;
+namespace OnlineStore;
 
 public partial class Form1 : Form
 {
