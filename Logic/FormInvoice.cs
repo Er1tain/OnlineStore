@@ -5,7 +5,7 @@ using Npgsql;
 using OfficeOpenXml;
 using System.IO;
 
-namespace ShaydarovEnterprise
+namespace OnlineStore
 {
     public partial class FormInvoice : Form
     {

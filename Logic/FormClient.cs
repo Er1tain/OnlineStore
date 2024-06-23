@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using Npgsql;
 using OfficeOpenXml;
 
-namespace ShaydarovEnterprise
+namespace OnlineStore
 {
     public partial class FormClient : Form
     {

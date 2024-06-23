@@ -1,4 +1,4 @@
-﻿namespace ShaydarovEnterprise
+﻿namespace OnlineStore
 {
     partial class FormContractItems
     {

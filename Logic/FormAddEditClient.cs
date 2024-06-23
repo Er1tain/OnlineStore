@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using Npgsql;
 
-namespace ShaydarovEnterprise
+namespace OnlineStore
 {
     public partial class FormAddEditClient : Form
     {
