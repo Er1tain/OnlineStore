@@ -18,21 +18,6 @@ namespace OnlineStore
             LoadData();
         }
 
-        private void LoadData()
-        {
-            string sql = "SELECT * FROM Payments";
-            NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, con);
-            ds = new DataSet();
-            da.Fill(ds);
-            dt = ds.Tables[0];
-            dataGridView1.DataSource = dt;
-            dataGridView1.Columns["paymentid"].HeaderText = "Номер";
-            dataGridView1.Columns["contractid"].HeaderText = "ID Договора";
-            dataGridView1.Columns["paymentdate"].HeaderText = "Дата оплаты";
-            dataGridView1.Columns["amount"].HeaderText = "Сумма";
-            dataGridView1.Columns["paymenttype"].HeaderText = "Тип оплаты";
-        }
-
         private void addButton_Click(object sender, EventArgs e)
         {
             FormAddEditPayment formAddEditPayment = new FormAddEditPayment(con);

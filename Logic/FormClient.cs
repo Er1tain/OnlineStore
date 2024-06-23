@@ -20,20 +20,6 @@ namespace OnlineStore
             LoadData();
         }
 
-        private void LoadData()
-        {
-            string sql = "SELECT * FROM Clients";
-            NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, con);
-            ds = new DataSet();
-            da.Fill(ds);
-            dt = ds.Tables[0];
-            dataGridView1.DataSource = dt;
-            dataGridView1.Columns["clientid"].HeaderText = "Номер";
-            dataGridView1.Columns["clientname"].HeaderText = "Наименование";
-            dataGridView1.Columns["phone"].HeaderText = "Телефон";
-            dataGridView1.Columns["address"].HeaderText = "Адрес";
-        }
-
         private void addButton_Click(object sender, EventArgs e)
         {
             FormAddEditClient formAddEditClient = new FormAddEditClient(con);

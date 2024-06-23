@@ -20,19 +20,6 @@ namespace OnlineStore
             LoadData();
         }
 
-        private void LoadData()
-        {
-            string sql = "SELECT * FROM Products";
-            NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, con);
-            ds = new DataSet();
-            da.Fill(ds);
-            dt = ds.Tables[0];
-            dataGridView1.DataSource = dt;
-            dataGridView1.Columns["productid"].HeaderText = "Номер";
-            dataGridView1.Columns["productname"].HeaderText = "Наименование";
-            dataGridView1.Columns["price"].HeaderText = "Цена";
-        }
-
         private void addButton_Click(object sender, EventArgs e)
         {
             FormAddEditProduct formAddEditProduct = new FormAddEditProduct(con);
