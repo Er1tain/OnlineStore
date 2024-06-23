@@ -11,7 +11,7 @@ namespace ShaydarovEnterprise
         public MainForm()
         {
             InitializeComponent();
-            string connString = "Server=localhost;Port=5432;UserId=postgres;Password=3Dj43MT1;Database=toystore";
+            string connString = "Server=localhost;Port=5432;UserId=postgres;Password=userpass;Database=toystore";
             con = new NpgsqlConnection(connString);
             con.Open();
         }
